@@ -1,0 +1,143 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iREMTOŞ VE MACERALARI</title>
+<style>
+    .general {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 30%;
+        margin-right: 30%;
+
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        align-items: left !important;
+    }
+
+    body {
+        font-size: 1.2em;
+        background: #ffe6f3;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+</style></head>
+
+
+
+<body>
+
+    <header class="center">
+        <h1>KARDA KAYIŞ MACERASI</h1>
+
+
+
+        <nav class="left">
+
+
+            <li><a href="index.html">Anasayfa</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="index.html#ozellik">Özellikleri</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="index.html#supergucler">Süper Güçler</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="index.html#maceralar">Maceraları</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="index.html#iletisim">İletişim</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section class="center" id=" anasayfa" style="margin-top: 50px;">
+
+
+
+            <video width="640" height="360" controls>
+            <source src="vid1.mp4" type="video/mp4">
+            </video>
+
+
+
+
+            <p>Bu web sitesi, benim <strong><i>"Süper Kahraman'ım"</i> </strong> olan biricik <strong>sevgilim </strong>
+                için hazırlanmıştır.</p>
+
+
+        </section>
+
+
+        <div class="general">
+
+            <section id="ozellik" style="margin-top: 100px;">
+
+                <h1 style="margin-bottom: 50px;">Maceranın Akılda Kalan Anları</h1>
+
+
+                <ul>
+                    <li>Video çekimi annesine aittir.</li>
+                    <br>
+                    
+                    <li>Video tarihi 7 şubat 2020</li>
+                    <br>
+                    
+                   
+
+
+                </ul>
+            </section>                      
+
+
+    
+
+        </div>
+
+
+
+    </main>
+
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</body></html>
